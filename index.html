@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header>
-    <div class="social">
-      <a href="#" class="social_item facebook">
-        <img src="./images/facebookIcon.png" alt="facebook">
-        <span>粉絲團</span>
-      </a>
-      <a href="#" class="social_item twitter">
-        <img src="./images/twitterIcon.png" alt="twitter">
-        <span>聯絡我們</span>
-      </a>
-    </div>
-    <div class="menu">
-      <a href="#" class="menu_logo">
-        <img src="./images/logo.png" alt="">
-      </a>
-      <div class="menu_nav">
-        <ul class="nav">
-          <li class="nav_item">首頁</li>
-          <li class="nav_item">
-            產品介紹
-            <ul class="nav_sub">
-              <li class="nav_subItem">課程類別</li>
-              <li class="nav_subItem">差異分析</li>
-            </ul>
-          </li>
-          <li class="nav_item">聯絡我們</li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <script src="./js/index.js"></script>
+    <header>
+        <div class="social">
+            <a href="#" class="social_item facebook">
+                <img src="./images/facebookIcon.png" alt="facebook">
+                <span>粉絲團</span>
+            </a>
+            <a href="#" class="social_item twitter">
+                <img src="./images/twitterIcon.png" alt="twitter">
+                <span>聯絡我們</span>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="#" class="menu_logo">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <div class="menu_nav">
+                <ul class="nav">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link" id="index">首頁</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link" id="product">產品介紹</a>
+                        <ul class="nav_sub" id="subNav">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link">課程類別</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link">差異分析</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link" id="contact">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

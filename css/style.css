@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+	v2.0 | 20110126
+	License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+a {
+    text-decoration: none;
+}
+a:active {
+    color: auto;
+}
 
 
 .social {
@@ -87,31 +93,56 @@ table {
 }
 
 .menu {
-    font-size: 0;
+    display: flex;
+    align-items: center;
 }
 
 .menu_logo {
-    display: inline-block;
-    width: 224px;
+    flex: 0 0 auto;
 }
 
 .menu_nav {
-    display: inline-block;
-    vertical-align: top;
-    width: calc( 100% - 224px );
-    height: 100%;
+    flex: 1;
 }
 
 .nav {
-    display: flex;
-    justify-content: flex-end;
+    font-size: 0;
+    text-align: right;
 }
 
 .nav_item {
     position: relative;
-    flex: 0 1 auto;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.nav>.nav_item+.nav_item {
+    margin-left: 4px;
+}
+
+.nav_item:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(77, 204, 162);
+    transform: translateX(-50%);
+    transition: all .2s;
+}
+
+.nav_item:hover:after,
+.active.nav_item:after {
+    width: 100%;
+}
+
+.nav_link {
+    display: inline-block;
+    padding: 20px;
     font-size: 16px;
-    color: green;
+    color: rgb(77, 204, 162);
 }
 
 .nav_sub {
