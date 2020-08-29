@@ -61,7 +61,7 @@ img {
 
 .social {
     padding: 4px;
-    background-color: gainsboro;
+    background-color: #eeeeee;
     font-size: 0;
     text-align: right;
 }
@@ -74,7 +74,7 @@ img {
 .social_item+.social_item {
     margin-left: 8px;
     padding-left: 8px;
-    border-left: 1px solid grey;
+    border-left: 1px solid #dddddd;
 }
 
 .social_item img,
@@ -161,20 +161,23 @@ img {
 }
 
 .product {
-	margin-top: 64px;
+	margin: 64px 0;
 }
 
-.intro .wrap {
-    display: flex;
+.wrap {
     max-width: 1140px;
     margin: auto;
     padding: 0 16px;
 }
 
+.intro {
+	display: flex;
+}
+
 .intro_card {
     flex: 1;
     padding: 24px;
-    box-shadow: 0 0 8px #d1d1d1;
+    box-shadow: 0 0 8px #dddddd;
     border-radius: 8px;
 }
 
@@ -209,4 +212,48 @@ img {
 
 .intro_list li:first-of-type {
     margin-top: 4px;
+}
+
+.difference {
+	margin-top: 64px;
+}
+
+.difference_title {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.difference_table {
+	width: 100%;
+	margin-top: 24px;
+}
+
+.difference_table thead {
+	background-color: #eeeeee;
+}
+
+.difference_table tr {
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+
+.difference_table th,
+.difference_table td {
+	padding: 8px 0 8px 24px;
+	font-size: 18px;
+	text-align: left;
+}
+
+.difference_table th:last-of-type,
+.difference_table td:last-of-type {
+	padding: 8px 24px;
+}
+
+.difference_table th {
+	font-weight: bold;
+}
+
+.win {
+	color: rgb(77, 204, 162);
 }
