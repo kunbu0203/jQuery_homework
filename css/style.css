@@ -54,6 +54,10 @@ a:active {
     color: auto;
 }
 
+img {
+	display: block;
+}
+
 
 .social {
     padding: 4px;
@@ -152,6 +156,14 @@ a:active {
     display: none;
 }
 
+.swiper-slide img {
+	width: 100%;
+}
+
+.product {
+	margin-top: 64px;
+}
+
 .intro .wrap {
     display: flex;
     max-width: 1140px;
@@ -177,7 +189,6 @@ a:active {
 }
 
 .intro_img img {
-    display: block;
     margin: auto;
 }
 

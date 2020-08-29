@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -47,7 +48,27 @@
     </header>
     <article>
         <section class="banner">
-
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./images/banner.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/banner.png" alt="">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </section>
         <section class="product">
             <div class="intro">
@@ -95,7 +116,8 @@
 
         </section>
     </article>
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/libs/jquery-3.4.1.min.js"></script>
+    <script src="./js/libs/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>
