@@ -58,6 +58,11 @@ img {
 	display: block;
 }
 
+header {
+	position: relative;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+	z-index: 10;
+}
 
 .social {
     padding: 4px;
@@ -98,7 +103,8 @@ img {
 
 .menu {
     display: flex;
-    align-items: center;
+	align-items: center;
+	background-color: #ffffff;
 }
 
 .menu_logo {
@@ -117,7 +123,8 @@ img {
 .nav_item {
     position: relative;
     display: inline-block;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #ffffff;
 }
 
 .nav>.nav_item+.nav_item {
@@ -329,8 +336,28 @@ textarea.inputBox {
 	border-radius: 4px;
 	background-color: rgb(77, 204, 162);
 	outline: none;
+	cursor: pointer;
 }
 
 .inputBox_submit:active {
 	opacity: .8;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 20px;
+}
+
+.footer_logo {
+    flex: 0 0 auto;
+}
+
+.footer_contact {
+    flex: 0 0 auto;
+}
+
+.contact_link {
+	color: palevioletred;
 }
