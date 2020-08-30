@@ -180,6 +180,24 @@ header {
 	background: #ffffff;
 }
 
+.swiper-slide {
+	position: relative;
+}
+
+.slogan {
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	padding: 48px 64px;
+	font-size: 32px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, .3);
+	transform: translateY(-50%);
+}
+
 .wrap {
 	box-sizing: border-box;
     max-width: 1140px;
