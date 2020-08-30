@@ -65,7 +65,7 @@ header {
 }
 
 .social {
-    padding: 4px;
+    padding: 4px 20px;
     background-color: #eeeeee;
     font-size: 0;
     text-align: right;
@@ -186,43 +186,43 @@ header {
 	display: flex;
 }
 
-.intro_card {
+.card {
     flex: 1;
     padding: 24px;
     box-shadow: 0 0 8px #dddddd;
     border-radius: 8px;
 }
 
-.intro_card+.intro_card {
+.card+.card {
     margin-left: 32px;
 }
 
-.intro_img {
+.card_img {
     display: flex;
     justify-content: center;
     min-height: 139px;
 }
 
-.intro_img img {
+.card_img img {
     margin: auto;
 }
 
-.intro_title {
+.card_title {
     margin: 12px 0;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
 
-.intro_list {
+.list {
     list-style: disc;
 }
 
-.intro_list li {
+.list li {
     margin-left: 28px;
 }
 
-.intro_list li:first-of-type {
+.list li:first-of-type {
     margin-top: 4px;
 }
 
@@ -239,32 +239,32 @@ header {
 .difference_content {
 	margin-top: 32px;
 }
-.difference_table {
+.table {
 	width: 100%;
 }
 
-.difference_table thead {
+.table thead {
 	background-color: #eeeeee;
 }
 
-.difference_table tr {
+.table tr {
 	border-top: 1px solid #dddddd;
 	border-bottom: 1px solid #dddddd;
 }
 
-.difference_table th,
-.difference_table td {
-	padding: 8px 0 8px 24px;
+.table th,
+.table td {
+	padding: 12px 0 12px 24px;
 	font-size: 18px;
 	text-align: left;
 }
 
-.difference_table th:last-of-type,
-.difference_table td:last-of-type {
-	padding: 8px 24px;
+.table th:last-of-type,
+.table td:last-of-type {
+	padding: 12px 24px;
 }
 
-.difference_table th {
+.table th {
 	font-weight: bold;
 }
 
