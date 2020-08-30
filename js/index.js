@@ -14,6 +14,12 @@ $(document).ready(function () {
         },
     })
 
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'disableScrolling': true
+    })
+
     $('#index').click(function (e) { 
         e.preventDefault();
         $('html').animate({
@@ -49,6 +55,22 @@ $(document).ready(function () {
         e.preventDefault();
         $('html').animate({
             scrollTop: $('.contact').offset().top
+        }, 500);
+    });
+
+    $(window).scroll(function () {
+        var scrollVal = $(this).scrollTop();
+        if (scrollVal > 80) {
+            $('.goTop').fadeIn(200);
+        } else {
+            $('.goTop').fadeOut(200);
+        }
+    });
+
+    $('.goTop').click(function (e) { 
+        e.preventDefault();
+        $('html').animate({
+            scrollTop: 0
         }, 500);
     });
 });

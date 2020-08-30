@@ -58,6 +58,10 @@ img {
 	display: block;
 }
 
+body {
+	min-width: 1140px;
+}
+
 header {
 	position: relative;
 	box-shadow: 0 0 8px rgba(0, 0, 0, .3);
@@ -177,6 +181,7 @@ header {
 }
 
 .wrap {
+	box-sizing: border-box;
     max-width: 1140px;
     margin: 0 auto;
     padding: 64px 16px;
@@ -371,4 +376,19 @@ footer {
 
 .contact_link {
 	color: palevioletred;
+}
+
+.goTop {
+	position: fixed;
+	right: 32px;
+	bottom: 72px;
+	display: none;
+	width: 48px;
+	padding: 12px 0;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.goTop p {
+	color: #ffffff;
+	text-align: center;
 }
