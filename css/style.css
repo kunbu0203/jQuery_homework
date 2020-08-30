@@ -186,9 +186,15 @@ header {
 	display: flex;
 }
 
+
+.lightboxOverlay {
+	outline:none;
+}
+
 .card {
     flex: 1;
-    padding: 24px;
+	padding: 24px;
+	color: #111111;
     box-shadow: 0 0 8px #dddddd;
     border-radius: 8px;
 }

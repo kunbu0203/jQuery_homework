@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -73,7 +74,7 @@
         <section class="product">
             <div class="wrap">
                 <div class="intro">
-                    <div class="card">
+                    <a href="./images/html.png" class="card" data-lightbox="card" data-title="HTML">
                         <div class="card_img">
                             <img src="./images/html.png" alt="">
                         </div>
@@ -81,8 +82,8 @@
                             <div class="card_title">Html 5基礎教學</div>
                             <div class="card_content">主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a href="./images/rwd.png" class="card" data-lightbox="card" data-title="RWD">
                         <div class="card_img">
                             <img src="./images/rwd.png" alt="">
                         </div>
@@ -90,8 +91,8 @@
                             <div class="card_title">響應式網站設計</div>
                             <div class="card_content">響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</div>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a href="./images/jQuery.png" class="card" data-lightbox="card" data-title="jQuery">
                         <div class="card_img">
                             <img src="./images/jQuery.png" alt="">
                         </div>
@@ -107,7 +108,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="difference">
                     <div class="difference_title">線上及實體課程的差異</div>
@@ -201,8 +202,17 @@
             <p>電話：<a href="tel:+886999123456" class="contact_link">0999123456</a></p>
         </div>
     </footer>
-    <script src="./js/libs/jquery-3.4.1.min.js"></script>
-    <script src="./js/libs/swiper-bundle.min.js"></script>
+    <div id="card1">123</div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/lightbox.min.js"></script>
     <script src="./js/index.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'disableScrolling': true
+        })
+    </script>
 </body>
 </html>
