@@ -166,10 +166,15 @@ header {
 .swiper-slide img {
 	width: 100%;
 }
+.swiper-button-next,
+.swiper-button-prev {
+	color: #ffffff;
+}
 
-/* .product {
-	margin: 64px 0;
-} */
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+	background: #ffffff;
+}
 
 .wrap {
     max-width: 1140px;
